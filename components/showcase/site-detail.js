@@ -3,7 +3,7 @@ import Router from 'next/router';
 import Head from 'next/head';
 
 function clearRoute() {
-  Router.router.push('/showcase', '/showcase', { shallow: true });
+  Router.router.push('/showcase');
 }
 
 export default class extends PureComponent {
