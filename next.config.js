@@ -112,6 +112,9 @@ const excelLessonsRedirect = [].concat(
 const nextConfig = {
   target: 'experimental-serverless-trace', // Not required for Vercel, but used by GitHub Actions
   pageExtensions: ['jsx', 'js', 'ts', 'tsx', 'mdx'],
+  experimental: {
+    unstable_webpack5cache: true
+  },
   headers() {
     return [
       { source: '/', headers: [{ key: 'Cache-Control', value: 'no-store, must-revalidate' }] },
